@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+  
+<suite name="ExampleApp">
+  <listeners>
+    <listener class-name="xpages.connect2014.example.util.Screenshot" /> 
+  </listeners>
+  <test name="ExampleApp" preserve-order="true">
+    <classes>
+        <class name="xpages.connect2014.example.Connect2014Example">
+            <methods>
+				<include name="testVerifyHomePage" />
+				<include name="testCreateDoc" />
+				<include name="testVerifyDoc" />
+			</methods>
+        </class>
+    </classes>
+  </test>
+</suite>

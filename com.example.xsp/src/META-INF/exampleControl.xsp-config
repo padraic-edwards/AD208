@@ -1,0 +1,53 @@
+<faces-config>
+    <faces-config-extension>
+        <namespace-uri>http://example.com/xsp/control</namespace-uri>
+        <default-prefix>eg</default-prefix>
+    </faces-config-extension>
+   
+    <component>
+    	<description>An example control used in explaining how to write your own controls.</description>
+    	<display-name>Example Control</display-name>
+    	<component-type>com.example.ExampleControl</component-type>
+        <component-class>com.example.component.ExampleControl</component-class>   
+        
+    	<property>
+  			<description>This is a title of the example control</description>
+  			<display-name>Title</display-name>
+  			<property-name>title</property-name>
+  			<property-class>java.lang.String</property-class>
+  			<property-extension>
+    			<designer-extension>
+      				<category>basics</category>
+      				<tags>
+      				 	not-localizable
+                  		not-accessibility-title
+                 	</tags>
+    			</designer-extension>
+  			</property-extension>
+		</property>
+	
+		<property>
+  			<description>This is the mainHeader of this control</description>
+  			<display-name>Main Header</display-name>
+  			<property-name>mainHeader</property-name>
+  			<property-class>java.lang.String</property-class>
+  			<property-extension>
+    			 	 <localizable>true</localizable>
+    				<designer-extension>
+      					<category>basics</category>
+      				</designer-extension>
+  			</property-extension>
+		</property>
+	      
+    <component-extension>
+        	 <renderer-type>com.example.ExampleControl</renderer-type>
+             <tag-name>exampleControl</tag-name>
+             <component-family>com.example.ExampleControl</component-family>
+       	 	 <since>1.0.0</since>
+       	 	 <designer-extension>
+       	 	 	<category>Example</category>
+       	 	 </designer-extension>
+        </component-extension>
+    </component>
+    
+</faces-config>

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Xsp Example Plug-in
+Bundle-SymbolicName: com.example.xsp;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: EXAMPLE
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: com.ibm.commons;bundle-version="8.5.2",
+ com.ibm.xsp.extsn,
+ com.ibm.xsp.core
+Export-Package: com.example.component,
+ com.example.library,
+ com.example.renderkit.html_basic
