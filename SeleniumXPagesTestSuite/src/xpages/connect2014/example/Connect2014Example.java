@@ -38,16 +38,16 @@ public class Connect2014Example {
 	public void launchTest() {
 	    //Create Chromedriver
 		//Mandatory setting - set the path to the Chrome driver before we create it
-	    System.setProperty("webdriver.chrome.driver", "Selenium\\chromedriver.exe");
+	    //System.setProperty("webdriver.chrome.driver", "Selenium\\chromedriver.exe");
 	    //Set the browser to open as maximised
-	    ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
+	    //ChromeOptions options = new ChromeOptions();
+        //options.addArguments("--start-maximized");
         //Create the ChromeDriver using the ChromeOptions object
-        webDriver = new ChromeDriver(options);
+        //webDriver = new ChromeDriver(options);
 
         //Create FirefoxDriver
-        //Uncomment the line below, and comment out the ChromeDriver lines to test in Firefox
-        //webDriver = new FirefoxDriver();
+        //Comment out the line below, and uncomment the ChromeDriver lines above in order to run tests in Google Chrome
+        webDriver = new FirefoxDriver();
         
         //Set how long to wait for an element to appear
         webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
