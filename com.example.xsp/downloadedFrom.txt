@@ -1,0 +1,2 @@
+Downloaded from the Example Files section of this doc on 2011-05-13:
+http://www-10.lotus.com/ldd/ddwiki.nsf/dx/Creating_an_XPages_Library
