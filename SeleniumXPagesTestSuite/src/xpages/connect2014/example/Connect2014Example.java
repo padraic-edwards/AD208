@@ -121,7 +121,7 @@ public class Connect2014Example {
         String foundTitle = getInput_openDoc_title().getText();
         String foundBody = getInput_openDoc_summary().getText();
         String foundAttachment = getInput_openDoc_attachment().getText();
-        assert(!foundTitle.equals(actualTitle)) : "Verify created document title: '" + actualTitle + "'. Found: '" + foundTitle + "'.";
+        assert(foundTitle.equals(actualTitle)) : "Verify created document title: '" + actualTitle + "'. Found: '" + foundTitle + "'.";
         assert(foundBody.equals(actualBody)) : "Verify created document body: '" + actualBody + "'. Found: '" + foundBody + "'.";
         assert(foundAttachment.equals(actualAttachment)) : "Verify created document attachment: '" + actualAttachment + "'. Found: '" + foundAttachment + "'.";
         
