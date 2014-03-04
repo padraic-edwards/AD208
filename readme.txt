@@ -12,9 +12,9 @@ Setup and install instructions:
 2. Selenium Automated GUI Project
 
 	- Copy/unzip the SeleniumXPagesTestSuite project to your machine
-	- Download the latest Selenium jar files from: https://code.google.com/p/selenium/downloads/list 
+	- Download the Selenium v2.39* jar files from: http://selenium-release.storage.googleapis.com/2.39/selenium-server-2.39.0.zip
 	- Unzip the Selenium jar files to your machine
-	- OPTIONAL: Download the latest chromedriver.exe if you wish to run Selenium tests in Google Chrome: http://chromedriver.storage.googleapis.com/index.html
+	- OPTIONAL: Download the latest chromedriver.exe if you wish to run Selenium tests in Google Chrome: http://chromedriver.storage.googleapis.com/index.html?path=2.9/
 	- Import the SeleniumXPagesTestSuite project to Eclipse/IBM Domino Designer
 	- In Eclipse/Designer, add the Selenium jar files to the "build path" of the SeleniumXPagesTestSuite project
 	- Also add all of the jar files in the "lib" folder of the Selenium install to the build path of the project
@@ -31,3 +31,6 @@ Setup and install instructions:
 Associated articles that describe how to create these plugins can be found here
 	- http://www-10.lotus.com/ldd/ddwiki.nsf/dx/Testing_XPages_with_JUnit_Test_Framework
 	- http://www-10.lotus.com/ldd/ddwiki.nsf/dx/Testing_XPagescol_Quick_Start
+
+
+* For the demo of AD208, it used Selenium v2.39, Firefox v26 and Chrome v32. There is no guarantee that the automation demo will work with older/newer versions.
